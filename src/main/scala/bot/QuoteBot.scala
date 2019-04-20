@@ -19,5 +19,5 @@ class QuoteBot extends TelegramBot with Polling with Commands {
 
   private lazy val token = scala.util.Properties
     .envOrNone("BOT_TOKEN")
-    .getOrElse("")
+    .getOrElse(Source.fromFile("bot.token").getLines().mkString)
 }

@@ -12,4 +12,4 @@ target
 .ensime
 .ensime_cache
 
-scalastyle-config.xml
+bot.token
